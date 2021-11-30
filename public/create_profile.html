@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+
+	
+    <link rel="stylesheet" type ="text/css" href="stylesheets/create_profile.css"/>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type = "text/javascript" src="javascripts/create_profile.js"></script>
+</head>
+
+<body>
+    <div id = "create_profile_frame">
+		<div class="create_profile_title">
+			Create Profile
+		</div>
+
+        <form method="post" action="jvasctiprs/create_profile.js">
+            <p><label class="label_input">Username</label><input type="text" id="username" class="text_field"/></p>
+            <p><label class="label_input">Password</label><input type="text" id="password" class="text_field"/></p>
+            <p><label class="label_input">Email</label><input type="text" id="email" class="text_field"/></p>
+            <p><label class="label_input">Age</label><input type="text" id="age" class="text_field"/></p>
+            <p><label class="label_input">Discord</label><input type="text" id="discord" class="text_field"/></p>
+            <p><label class="label_input">Region</label><input type="text" id="region" class="text_field"/></p>
+
+            <div id = "save_changes">
+                <input type="button" id="btn_save_changes" value="Create" onclick="create_profile();"/>
+                <a class="login-links" id ="forget_pwd" href="index.html">Returning User?</a>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+</html>
